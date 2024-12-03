@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.innerHTML = `
                 <h3>${nonprofit.name}</h3>
                 <p>${nonprofit.mission || "No description available"}</p>
-                <a href="${nonprofit.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                <a href="${nonprofit.website}" target="_blank">Visit Website</a>
             `;
             nonprofitContainer.appendChild(card);
         });
