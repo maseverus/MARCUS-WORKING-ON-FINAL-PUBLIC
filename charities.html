@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charities List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Home page">Home</a></li>
+                <li><a href="charities.html" aria-label="List of Charities" class="active" aria-current="page">Charities List</a></li>
+                <li class="search-bar">
+                    <form action="search.html" method="get">
+                        <input type="text" placeholder="Search: Find charities near you!" name="search">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="charities-list-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Charity</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dog Shelter</td>
+                        <td>Here, you can adopt a dog! They're all loving and need an owner.</td>
+                        <td><button onclick="window.location.href='charity_profile_Dog_Shelter.html?charity=dog-shelter';">Profile</button></td>
+                    </tr>
+                    <tr>
+                        <td>Food Bank</td>
+                        <td>Come donate food to families and individuals in need!</td>
+                        <td><button onclick="window.location.href='charity_profile_Food_Bank.html?charity=food-bank';">Profile</button></td>
+                    </tr>
+                    <tr>
+                        <td>Mentoring the Youth</td>
+                        <td>There are many struggling youth. Come help them grow into their future!</td>
+                        <td><button onclick="window.location.href='charity_profile_Mentoring_the_Youth.html?charity=youth-mentoring';">Profile</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="image-placeholder">
+           <img src="HelpHub.png" alt="HelpHub Image">
+        </section>
+    </main>
+
+    <footer>
+      &copy; 2024 HelpHub. All rights reserved.
+    </footer>
+
+</body>
+</html>
